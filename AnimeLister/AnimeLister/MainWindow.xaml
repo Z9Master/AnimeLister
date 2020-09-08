@@ -5,8 +5,145 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AnimeLister"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="AnimeLister" Height="500" Width="900" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize" WindowStyle="None">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="100"></ColumnDefinition>
+                <ColumnDefinition Width="100"></ColumnDefinition>
+                <ColumnDefinition Width="100"></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition Width="30"></ColumnDefinition>
+                <ColumnDefinition Width="30"></ColumnDefinition>
+                <ColumnDefinition Width="30"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.Resources>
+                <Style TargetType="Grid">
+                    <Setter Property="Background" Value="#FF3F3F46"></Setter>
+                </Style>
+                <Style TargetType="Button">
+                    <Setter Property="FontSize" Value="15"></Setter>
+                    <Setter Property="FontFamily" Value="Century Gothic"></Setter>
+                    <Setter Property="BorderBrush" Value="Transparent"></Setter>
+                    <Setter Property="BorderThickness" Value="0"></Setter>
+                    <Setter Property="Background" Value="#FF3F3F46"></Setter>
+                    <Setter Property="Foreground" Value="White"></Setter>
+                </Style>
+            </Grid.Resources>
+            <Grid Grid.Column="0">
+                <Button>Add</Button>
+            </Grid>
+            <Grid Grid.Column="1">
+                <Button>Edit</Button>
+            </Grid>
+            <Grid Grid.Column="2">
+                <Button>Remove</Button>
+            </Grid>
+            <Grid Grid.Column="4">
+                <Button Click="Btn_Click_Minimize">m</Button>
+            </Grid>
+            <Grid Grid.Column="5">
+                <Button Click="Btn_Click_Maximize">M</Button>
+            </Grid>
+            <Grid Grid.Column="6">
+                <Button Click="Btn_Click_Close">C</Button>
+            </Grid>
+            
+        </Grid>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition Width="5"></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="1" Margin="0" Background="#FF3F3F46"></Grid>
+            <Grid Grid.Column="2" Margin="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition Height="30"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0">
+                   <ListBox Background="White" x:Name="LB_ListAnime" BorderThickness="0" SelectionChanged="LB_ListAnime_SelectionChanged">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <Label Content="{Binding animeName}" Tag="{Binding animeId}"></Label>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                    </ListBox>
+                </Grid>
+                <Grid Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Grid.Resources>
+                        <Style x:Name="Btn_Filter" TargetType="Button">
+                            <Setter Property="FontSize" Value="15"></Setter>
+                            <Setter Property="FontFamily" Value="Century Gothic"></Setter>
+                            <Setter Property="BorderBrush" Value="Transparent"></Setter>
+                            <Setter Property="BorderThickness" Value="0"></Setter>
+                            <Setter Property="Background" Value="#FF3F3F46"></Setter>
+                            <Setter Property="Foreground" Value="White"></Setter>
+                        </Style>
+                    </Grid.Resources>
+                    <Grid Grid.Column="0">
+                        <Button Click="Btn_Click_FilterAll">All</Button>
+                    </Grid>
+                    <Grid Grid.Column="1">
+                        <Button Click="Btn_Click_FilterSaw">Saw</Button>
+                    </Grid>
+                    <Grid Grid.Column="2">
+                        <Button Click="Btn_Click_FilterNew">New</Button>
+                    </Grid>
+                </Grid>
+            </Grid>
+            <Grid Grid.Column="0" Margin="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="2*"></RowDefinition>
+                    <RowDefinition Height="2*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0" Background="#FFA2A2A2">
+                    <Image x:Name="Img_AnimeImage" Stretch="UniformToFill"/>
+                </Grid>
+                <Grid Grid.Row="1">
+                    <ScrollViewer ScrollViewer.VerticalScrollBarVisibility="Hidden">
+                        <StackPanel CanVerticallyScroll="True" Background="#FF4B4B4B">
+                            <StackPanel.Resources>
+                                <Style x:Key="St_TextInfo" TargetType="Label">
+                                    <Setter Property="FontSize" Value="15"></Setter>
+                                    <Setter Property="Padding" Value="5,2,0,0"></Setter>
+                                    <Setter Property="FontFamily" Value="Century Gothic"></Setter>
+                                    <Setter Property="Foreground" Value="White"></Setter>
+                                </Style>
+                                <Style x:Key="St_TextInfo2" TargetType="TextBlock">
+                                    <Setter Property="FontSize" Value="15"></Setter>
+                                    <Setter Property="FontFamily" Value="Century Gothic"></Setter>
+                                    <Setter Property="Padding" Value="55,0,0,0"></Setter>
+                                    <Setter Property="TextWrapping" Value="Wrap"></Setter>
+                                    <Setter Property="Foreground" Value="White"></Setter>
+                                </Style>
+                            </StackPanel.Resources>
+
+                            <Label Style="{StaticResource St_TextInfo}">Name:</Label>
+                            <TextBlock x:Name="TBk_AnimeName" Style="{StaticResource St_TextInfo2}">unavailable</TextBlock>
+                            <Label Style="{StaticResource St_TextInfo}">Year:</Label>
+                            <TextBlock x:Name="TBk_AnimeYear" Style="{StaticResource St_TextInfo2}">unavailable</TextBlock>
+                            <Label Style="{StaticResource St_TextInfo}">Genre:</Label>
+                            <TextBlock x:Name="TBk_AnimeGenre" Style="{StaticResource St_TextInfo2}">unavailable</TextBlock>
+                            <Label Style="{StaticResource St_TextInfo}">Seen:</Label>
+                            <TextBlock x:Name="TBk_AnimeSeen" Style="{StaticResource St_TextInfo2}">unavailable</TextBlock>
+                            <Label Style="{StaticResource St_TextInfo}">Note:</Label>
+                            <TextBlock x:Name="TBk_AnimeNote" Style="{StaticResource St_TextInfo2}">unavailable</TextBlock>
+                        </StackPanel>
+                    </ScrollViewer>
+                    
+                </Grid>
+            </Grid>
+        </Grid>
     </Grid>
 </Window>

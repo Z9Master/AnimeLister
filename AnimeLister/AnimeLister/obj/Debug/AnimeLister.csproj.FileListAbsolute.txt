@@ -1,0 +1,15 @@
+E:\Project\C#\AnimeLister\AnimeLister\AnimeLister\AnimeLister\bin\Debug\AnimeLister.exe.config
+E:\Project\C#\AnimeLister\AnimeLister\AnimeLister\AnimeLister\bin\Debug\AnimeLister.exe
+E:\Project\C#\AnimeLister\AnimeLister\AnimeLister\AnimeLister\bin\Debug\AnimeLister.pdb
+E:\Project\C#\AnimeLister\AnimeLister\AnimeLister\AnimeLister\obj\Debug\AnimeLister.csprojAssemblyReference.cache
+E:\Project\C#\AnimeLister\AnimeLister\AnimeLister\AnimeLister\obj\Debug\MainWindow.g.cs
+E:\Project\C#\AnimeLister\AnimeLister\AnimeLister\AnimeLister\obj\Debug\App.g.cs
+E:\Project\C#\AnimeLister\AnimeLister\AnimeLister\AnimeLister\obj\Debug\AnimeLister_MarkupCompile.cache
+E:\Project\C#\AnimeLister\AnimeLister\AnimeLister\AnimeLister\obj\Debug\AnimeLister_MarkupCompile.lref
+E:\Project\C#\AnimeLister\AnimeLister\AnimeLister\AnimeLister\obj\Debug\MainWindow.baml
+E:\Project\C#\AnimeLister\AnimeLister\AnimeLister\AnimeLister\obj\Debug\AnimeLister.g.resources
+E:\Project\C#\AnimeLister\AnimeLister\AnimeLister\AnimeLister\obj\Debug\AnimeLister.Properties.Resources.resources
+E:\Project\C#\AnimeLister\AnimeLister\AnimeLister\AnimeLister\obj\Debug\AnimeLister.csproj.GenerateResource.cache
+E:\Project\C#\AnimeLister\AnimeLister\AnimeLister\AnimeLister\obj\Debug\AnimeLister.csproj.CoreCompileInputs.cache
+E:\Project\C#\AnimeLister\AnimeLister\AnimeLister\AnimeLister\obj\Debug\AnimeLister.exe
+E:\Project\C#\AnimeLister\AnimeLister\AnimeLister\AnimeLister\obj\Debug\AnimeLister.pdb
