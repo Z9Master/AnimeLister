@@ -23,25 +23,25 @@
             </Grid.ColumnDefinitions>
             <Grid.Resources>
                 <Style TargetType="Grid">
-                    <Setter Property="Background" Value="#FF3F3F46"></Setter>
+                    <Setter Property="Background" Value="#FF2C2C2C"></Setter>
                 </Style>
                 <Style TargetType="Button">
                     <Setter Property="FontSize" Value="15"></Setter>
                     <Setter Property="FontFamily" Value="Century Gothic"></Setter>
                     <Setter Property="BorderBrush" Value="Transparent"></Setter>
                     <Setter Property="BorderThickness" Value="0"></Setter>
-                    <Setter Property="Background" Value="#FF3F3F46"></Setter>
+                    <Setter Property="Background" Value="#FF2C2C2C"></Setter>
                     <Setter Property="Foreground" Value="White"></Setter>
                 </Style>
             </Grid.Resources>
             <Grid Grid.Column="0">
-                <Button>Add</Button>
+                <Button Click="Btn_Click_AddAnime">Add</Button>
             </Grid>
             <Grid Grid.Column="1">
-                <Button>Edit</Button>
+                <Button Click="Btn_Click_Edit">Edit</Button>
             </Grid>
             <Grid Grid.Column="2">
-                <Button>Remove</Button>
+                <Button Click="Btn_Click_Remove">Remove</Button>
             </Grid>
             <Grid Grid.Column="4">
                 <Button Click="Btn_Click_Minimize">m</Button>
@@ -70,7 +70,7 @@
                    <ListBox Background="White" x:Name="LB_ListAnime" BorderThickness="0" SelectionChanged="LB_ListAnime_SelectionChanged">
                     <ListBox.ItemTemplate>
                         <DataTemplate>
-                            <Label Content="{Binding animeName}" Tag="{Binding animeId}"></Label>
+                                <Label FontFamily="Century Gothic" FontSize="15" Content="{Binding animeName}" Tag="{Binding animeId}"></Label>
                         </DataTemplate>
                     </ListBox.ItemTemplate>
                     </ListBox>
@@ -87,7 +87,7 @@
                             <Setter Property="FontFamily" Value="Century Gothic"></Setter>
                             <Setter Property="BorderBrush" Value="Transparent"></Setter>
                             <Setter Property="BorderThickness" Value="0"></Setter>
-                            <Setter Property="Background" Value="#FF3F3F46"></Setter>
+                            <Setter Property="Background" Value="#FF3A3A3A"></Setter>
                             <Setter Property="Foreground" Value="White"></Setter>
                         </Style>
                     </Grid.Resources>
@@ -112,7 +112,7 @@
                 </Grid>
                 <Grid Grid.Row="1">
                     <ScrollViewer ScrollViewer.VerticalScrollBarVisibility="Hidden">
-                        <StackPanel CanVerticallyScroll="True" Background="#FF4B4B4B">
+                        <StackPanel CanVerticallyScroll="True" Background="#FF3A3A3A">
                             <StackPanel.Resources>
                                 <Style x:Key="St_TextInfo" TargetType="Label">
                                     <Setter Property="FontSize" Value="15"></Setter>

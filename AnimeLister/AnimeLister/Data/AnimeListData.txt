@@ -1,4 +1,6 @@
-0;No game no life;2011;Isekai;1;null;Shiro and Sora got isekai lol
 1;SAO ss1;0;Game;1;null;Kirito stuck in SAO
 2;Cooking with valkyria ss1;2019;Game;1;E:\Picture\Anime\Honkai Impact\Valkyries(1).jpg;How to destroy the cuisine
 3;demo;2000;0;0;E:\Picture\Anime\Honkai Impact\Mei 2 .png;notes
+9;xdd;1235;;0;file:///E:/Picture/Draw/Unknow/Výstřižek.PNG;cff
+7;Infinite Strators SS1;?;?;0;null;1 boy can ride mech lol
+6;Idol Master;unavaiable;;0;file:///E:/Cache/IdolMaster_p0.png;

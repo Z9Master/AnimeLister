@@ -13,3 +13,7 @@ E:\Project\C#\AnimeLister\AnimeLister\AnimeLister\AnimeLister\obj\Debug\AnimeLis
 E:\Project\C#\AnimeLister\AnimeLister\AnimeLister\AnimeLister\obj\Debug\AnimeLister.csproj.CoreCompileInputs.cache
 E:\Project\C#\AnimeLister\AnimeLister\AnimeLister\AnimeLister\obj\Debug\AnimeLister.exe
 E:\Project\C#\AnimeLister\AnimeLister\AnimeLister\AnimeLister\obj\Debug\AnimeLister.pdb
+E:\Project\C#\AnimeLister\AnimeLister\AnimeLister\AnimeLister\obj\Debug\AddAnime.g.cs
+E:\Project\C#\AnimeLister\AnimeLister\AnimeLister\AnimeLister\obj\Debug\AddAnime.baml
+E:\Project\C#\AnimeLister\AnimeLister\AnimeLister\AnimeLister\obj\Debug\EditAnime.g.cs
+E:\Project\C#\AnimeLister\AnimeLister\AnimeLister\AnimeLister\obj\Debug\EditAnime.baml
